@@ -4,8 +4,6 @@ INTERN ID:CTIS6243
 DOMAIN:JAVA PROGRAMMING
 DURATION:6 WEEKS
 MENTOR:NEELA SANTOSH
-Here is your Task Description (More than 500 Words) based on your internship details shown in the image:
-
 TASK DESCRIPTION – JAVA PROGRAMMING INTERNSHIP
 
 During my six-week internship at Codetech IT Solutions, I worked in the domain of Java Programming under the guidance of my mentor, Neela Santosh. The main objective of my internship was to strengthen my programming knowledge, improve my logical thinking ability, and gain practical exposure to real-time software development concepts using Java.
@@ -27,8 +25,5 @@ Team discussions and weekly reviews were conducted to monitor progress and impro
 By the end of the internship, I gained confidence in developing Java-based applications independently. I improved my technical knowledge, time management skills, and communication skills. This internship provided me with practical exposure to software development and prepared me for future career opportunities in the IT industry.
 
 In conclusion, my internship at Codetech IT Solutions was a valuable learning experience. It helped me bridge the gap between theoretical knowledge and practical implementation. I am thankful to my mentor and the organization for providing me with this opportunity to enhance my skills in Java programming.
-
-
----
 
 If you want, I can also format this in report format, PDF format, or make it more technical (700–800 words)** for submission.

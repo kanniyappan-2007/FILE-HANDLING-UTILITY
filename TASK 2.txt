@@ -1,0 +1,59 @@
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import org.json.JSONObject;
+
+public class WeatherApp {
+
+    public static void main(String[] args) {
+
+        try {
+
+            // Coordinates for London
+            String latitude = "51.5074";
+            String longitude = "-0.1278";
+
+            // Open-Meteo API URL
+            String apiUrl = "https://api.open-meteo.com/v1/forecast?latitude="
+                    + latitude
+                    + "&longitude=" + longitude
+                    + "&current_weather=true";
+
+            // Create HTTP Client
+            HttpClient client = HttpClient.newHttpClient();
+
+            // Build HTTP Request
+            HttpRequest request = HttpRequest.newBuilder()
+                    .uri(URI.create(apiUrl))
+                    .GET()
+                    .build();
+
+            // Send Request and Get Response
+            HttpResponse<String> response =
+                    client.send(request, HttpResponse.BodyHandlers.ofString());
+
+            // Parse JSON Response
+            JSONObject jsonResponse = new JSONObject(response.body());
+            JSONObject currentWeather = jsonResponse.getJSONObject("current_weather");
+
+            double temperature = currentWeather.getDouble("temperature");
+            double windSpeed = currentWeather.getDouble("windspeed");
+            int weatherCode = currentWeather.getInt("weathercode");
+            String time = currentWeather.getString("time");
+
+            // Display Structured Output
+            System.out.println("\n===== WEATHER REPORT =====");
+            System.out.println("Location       : London");
+            System.out.println("Date & Time    : " + time);
+            System.out.println("Temperature    : " + temperature + " °C");
+            System.out.println("Wind Speed     : " + windSpeed + " km/h");
+            System.out.println("Weather Code   : " + weatherCode);
+            System.out.println("==========================\n");
+
+        } catch (Exception e) {
+            System.out.println("Error fetching weather data.");
+            e.printStackTrace();
+        }
+    }
+}

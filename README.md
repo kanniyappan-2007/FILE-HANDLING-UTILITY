@@ -25,5 +25,3 @@ Team discussions and weekly reviews were conducted to monitor progress and impro
 By the end of the internship, I gained confidence in developing Java-based applications independently. I improved my technical knowledge, time management skills, and communication skills. This internship provided me with practical exposure to software development and prepared me for future career opportunities in the IT industry.
 
 In conclusion, my internship at Codetech IT Solutions was a valuable learning experience. It helped me bridge the gap between theoretical knowledge and practical implementation. I am thankful to my mentor and the organization for providing me with this opportunity to enhance my skills in Java programming.
-
-If you want, I can also format this in report format, PDF format, or make it more technical (700–800 words)** for submission.
